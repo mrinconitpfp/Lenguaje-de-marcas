@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: rgb(234, 218, 249);">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>primera parte</legend>
+            <button style="background-color:rgb(200, 182, 219)">Botón</button>
+            <br/>
+            <textarea name="areaTexto" rows="10" cols="10" minlength="10" placeholder="Aquí puedes escribir" style="background-color: rgb(242, 210, 243);" required></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>Segunda parte</legend>
+            <label>Elige una opción:</label>
+            <select name="elegir" required>
+                <option>Opción 1</option>
+                <option>Opción 2</option>
+                <option>Opción 3</option>
+                <option>Opción 4</option>
+                <option>Opción 5</option>
+            </select>
+            <br/>
+            <br/>
+            <label>Introduce tu nombre</label>
+            <input type="text" name="textoCorto" required/>
+            <br/>
+            <br/>
+            <label>Inroduce tu teléfono: </label>
+            <input type="tel" name="teléfono"/>
+            <br/>
+            <br/>
+            <label>Introduce tu correo: </label>
+            <br/>
+            <br/>
+            <input type="reset" value="Resetear"/>
+            <input type="submit" value="Enviar"/>
+            <input type="email" email="correo"/>
+            <br/>
+            <br/>
+            <input type="password" name="contraseña" minlenght="8"/>
+            <br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>Tercera parte</legend>
+            <label>Color:</label>
+            <input type="color" name="color"/>
+            <br/>
+            <label>Fecha y hora:</label>
+            <input type="date" name="fecha"/>
+            <input type="time" name="hora"/>
+            <input type="datetime-local" name="fechayhora"/>
+            <br/>
+            <input type="range" name="rango" min="0" max="100" value="30" oninput="this.ElementSibling.value"/>
+            <br/>
+            <input type="file" name="archivo" accept=".pdf"/>
+
+            <br/>
+            <label>Selecciona una o varias opciones: </label>
+            <label for="elergirVarias">
+                Opcion 1
+                <input type="checkbox"/>
+                Opcion 2
+                <input type="checkbox"/>
+                Opcion 3
+                <input type="checkbox"/>
+            </label>
+            <label>Selecciona una: </label>
+            <label for="elegirUna">
+                Opcion 1
+                <input type="radio" name="elegir"/>
+            </label>
+            <label>
+                Opcion 2
+                <input type="radio" name="elergir"/>
+            </label>
+            <label>
+                Opcion 3
+                <input type="radio" name="elergir"/>
+            </label>
+        </fieldset>
+    </form>
+    <progress></progress>
+    <progress min="0" max="100" value="75"></progress>
+</body>
+</html>
